@@ -1,0 +1,33 @@
+baseURL = 'http://example.org/'
+languageCode = 'ru-ru'
+title = 'SimplePhysics'
+theme = 'PaperMod'
+
+[params]
+  description = 'Описание проекта для проектной практики'
+
+[menu]
+  [[menu.main]]
+    name = "Главная"
+    url = "/"
+    weight = 10
+  
+  [[menu.main]]
+    name = "О проекте"
+    url = "/about/"
+    weight = 20
+  
+  [[menu.main]]
+    name = "Участники"
+    url = "/team/"
+    weight = 30
+  
+  [[menu.main]]
+    name = "Журнал"
+    url = "/posts/"
+    weight = 40
+  
+  [[menu.main]]
+    name = "Ресурсы"
+    url = "/resources/"
+    weight = 50
