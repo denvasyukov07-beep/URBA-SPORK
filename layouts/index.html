@@ -1,0 +1,192 @@
+{{ define "main" }}
+<style>
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #1e1e2f 0%, #2a2a40 100%);
+  border-radius: 24px;
+  color: white;
+  margin-bottom: 2rem;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #ffd166, #06d6a0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.hero p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+.features {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 3rem 0;
+}
+.card {
+  background: #f5f5f7;
+  padding: 1.5rem;
+  border-radius: 20px;
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.card h3 {
+  color: #1e1e2f;
+  margin-bottom: 0.5rem;
+}
+.card p {
+  color: #555;
+}
+.team {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 3rem 0;
+}
+.team-card {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 1.5rem;
+  border-radius: 20px;
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+  border-bottom: 4px solid #06d6a0;
+}
+.team-card h3 {
+  color: #1e1e2f;
+  margin-bottom: 0.25rem;
+}
+.team-role {
+  color: #06d6a0;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+.cta {
+  text-align: center;
+  margin: 3rem 0;
+}
+.btn {
+  display: inline-block;
+  background: #06d6a0;
+  color: #1e1e2f;
+  padding: 12px 28px;
+  border-radius: 40px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+</style>
+
+<div class="hero">
+  <h1>⚡ SimplePhysics</h1>
+  <p>Физика, оживающая в истории</p>
+  <p style="font-size: 1.1rem; margin-top: 1rem;">🎮 Визуальная новелла для будущих физиков</p>
+</div>
+
+<h2>О проекте</h2>
+<p><strong>SimplePhysics</strong> — это визуальная новелла, которая превращает изучение физики в увлекательное приключение. Проект создаётся для привлечения абитуриентов в университет, демонстрируя, что физика — это не скучные формулы, а захватывающие истории.</p>
+
+<hr>
+
+<h2>Ключевые особенности</h2>
+
+<div class="features">
+  <div class="card">
+    <h3>📖 Увлекательный сюжет</h3>
+    <p>Физика становится частью приключения</p>
+  </div>
+  <div class="card">
+    <h3>🎮 Интерактивные выборы</h3>
+    <p>Ваши решения влияют на сюжет</p>
+  </div>
+  <div class="card">
+    <h3>📚 Обучение через игру</h3>
+    <p>Законы физики запоминаются сами собой</p>
+  </div>
+  <div class="card">
+    <h3>🎨 Уникальный арт-стиль</h3>
+    <p>Визуальный стиль, вдохновлённый наукой</p>
+  </div>
+  <div class="card">
+    <h3>🎵 Оригинальный саундтрек</h3>
+    <p>Музыка для полного погружения</p>
+  </div>
+</div>
+
+<h2>Цели проекта</h2>
+
+<ul>
+  <li>Создать визуальную новеллу с интеграцией физических концепций</li>
+  <li>Повысить интерес абитуриентов к физическим специальностям</li>
+  <li>Предложить альтернативный способ знакомства с наукой</li>
+</ul>
+
+<hr>
+
+<h2>👥 Участники команды</h2>
+
+<div class="team">
+  <div class="team-card">
+    <h3>🛠️ Team Lead</h3>
+    <div class="team-role">Иван Иванов</div>
+    <p>Руководство проектом, контроль сроков, связь с партнёром, создание сайта</p>
+  </div>
+  <div class="team-card">
+    <h3>🎨 2D Artist</h3>
+    <div class="team-role">Мария Петрова</div>
+    <p>Создание персонажей, фонов, дизайн интерфейса</p>
+  </div>
+  <div class="team-card">
+    <h3>💻 Программист</h3>
+    <div class="team-role">Алексей Сидоров</div>
+    <p>Разработка игры на Ren'Py, реализация сценария</p>
+  </div>
+  <div class="team-card">
+    <h3>📝 Сценарист</h3>
+    <div class="team-role">Елена Козлова</div>
+    <p>Написание сюжета, диалогов, физических задач</p>
+  </div>
+</div>
+
+<h2>📊 Личный вклад участников</h2>
+
+<table style="width: 100%; border-collapse: collapse;">
+  <tr style="background: #06d6a0; color: #1e1e2f;">
+    <th style="padding: 10px; border: 1px solid #ddd;">Участник</th>
+    <th style="padding: 10px; border: 1px solid #ddd;">Вклад в проект</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px; border: 1px solid #ddd;"><strong>Team Lead</strong></td>
+    <td style="padding: 10px; border: 1px solid #ddd;">Управление командой, контроль сроков, связь с партнёром, создание сайта</td>
+  </tr>
+  <tr style="background: #f9f9f9;">
+    <td style="padding: 10px; border: 1px solid #ddd;"><strong>2D Artist</strong></td>
+    <td style="padding: 10px; border: 1px solid #ddd;">Разработка 12 персонажей, 8 фоновых сцен, дизайн интерфейса</td>
+  </tr>
+  <tr>
+    <td style="padding: 10px; border: 1px solid #ddd;"><strong>Программист</strong></td>
+    <td style="padding: 10px; border: 1px solid #ddd;">Написание кода игры, настройка системы диалогов и выборов</td>
+  </tr>
+  <tr style="background: #f9f9f9;">
+    <td style="padding: 10px; border: 1px solid #ddd;"><strong>Сценарист</strong></td>
+    <td style="padding: 10px; border: 1px solid #ddd;">Написание 3 сюжетных веток, интеграция 10 физических задач</td>
+  </tr>
+</table>
+
+<div class="cta">
+  <a href="/about" class="btn">📖 Узнать больше о проекте</a>
+</div>
+
+<hr>
+
+<p><em>Проект выполняется в рамках проектной практики</em></p>
+{{ end }}
