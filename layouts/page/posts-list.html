@@ -1,0 +1,30 @@
+{{ define "main" }}
+<article>
+    <h1>{{ .Title }}</h1>
+    <div class="content">
+        {{ .Content }}
+    </div>
+    
+    <h2>📋 Все записи журнала</h2>
+    
+    {{ $pages := where site.RegularPages "Section" "posts" }}
+    {{ range $pages.ByDate.Reverse }}
+    <div style="margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #eee;">
+        <h3 style="margin-bottom: 0.25rem;">
+            <a href="{{ .RelPermalink }}" style="text-decoration: none; color: #1e1e2f;">
+                {{ .Title }}
+            </a>
+        </h3>
+        <div style="color: #888; font-size: 0.9rem; margin-bottom: 0.5rem;">
+            📅 {{ .Date.Format "02.01.2006" }} | 👤 {{ .Params.author }}
+        </div>
+        <div style="color: #555;">
+            {{ .Summary | plainify | truncate 200 }}
+        </div>
+        <a href="{{ .RelPermalink }}" style="display: inline-block; margin-top: 0.5rem; color: #06d6a0; text-decoration: none;">
+            Читать далее →
+        </a>
+    </div>
+    {{ end }}
+</article>
+{{ end }}

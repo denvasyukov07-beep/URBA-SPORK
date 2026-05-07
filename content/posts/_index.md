@@ -1,7 +1,15 @@
++++
+title = "Журнал проекта"
+date = 2026-04-30
+draft = false
+layout = "posts-list"
+type = "page"
++++
+
+## Добро пожаловать в журнал проекта SimplePhysics!
+
+Здесь мы публикуем новости, отчёты о прогрессе и важные события. Следите за нашими обновлениями!
+
 ---
-title: 'Posts'
-date: '2026-04-27T08:56:15+03:00'
-tags: []
-featured_image: ""
-description: ""
----
+
+📬 **Подпишитесь на обновления:** simplephysics@example.com
