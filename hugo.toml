@@ -1,7 +1,8 @@
 baseURL = "https://denvasyukov07-beep.github.io/URBA-SPORK/"
+relativeURLs = true
 languageCode = 'ru-ru'
 title = 'SimplePhysics'
-theme = 'PaperMod'
+theme = "PaperMod"
 
 [params]
   description = 'Описание проекта для проектной практики'

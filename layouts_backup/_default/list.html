@@ -1,0 +1,16 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+<div class="content">
+    {{ .Content }}
+</div>
+
+{{ $pages := where .Site.RegularPages "Section" .Section }}
+{{ range $pages.ByDate.Reverse }}
+<div style="margin-bottom: 2rem; border-bottom: 1px solid #eee; padding-bottom: 1rem;">
+    <h3><a href="{{ .RelPermalink }}" style="text-decoration: none;">{{ .Title }}</a></h3>
+    <div style="color: #888; font-size: 0.9rem;">📅 {{ .Date.Format "02.01.2006" }}</div>
+    <div style="margin-top: 0.5rem;">{{ .Summary | plainify | truncate 150 }}</div>
+    <a href="{{ .RelPermalink }}" style="color: #06d6a0;">Читать далее →</a>
+</div>
+{{ end }}
+{{ end }}
