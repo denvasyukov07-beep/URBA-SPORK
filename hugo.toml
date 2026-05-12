@@ -1,37 +1,15 @@
 baseURL = "https://denvasyukov07-beep.github.io/URBA-SPORK/"
-relativeURLs = true
-languageCode = 'ru-ru'
-title = 'SimplePhysics'
+languageCode = "ru-ru"
+title = "SimplePhysics"
 theme = "PaperMod"
+relativeURLs = true
 
-env:
-  HUGO_VERSION: 0.160.0
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+ignoreLogs = ["warning-goldmark-raw-html"]
 
 [params]
-  description = 'Описание проекта для проектной практики'
-
-[menu]
-  [[menu.main]]
-    name = "Главная"
-    url = "/"
-    weight = 10
-  
-  [[menu.main]]
-    name = "О проекте"
-    url = "/about/"
-    weight = 20
-  
-  [[menu.main]]
-    name = "Участники"
-    url = "/team/"
-    weight = 30
-  
-  [[menu.main]]
-    name = "Журнал"
-    url = "/posts/"
-    weight = 40
-  
-  [[menu.main]]
-    name = "Ресурсы"
-    url = "/resources/"
-    weight = 50
+  env = "production"
