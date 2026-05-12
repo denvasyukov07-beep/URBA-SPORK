@@ -4,6 +4,9 @@ languageCode = 'ru-ru'
 title = 'SimplePhysics'
 theme = "PaperMod"
 
+env:
+  HUGO_VERSION: 0.160.0
+
 [params]
   description = 'Описание проекта для проектной практики'
 
